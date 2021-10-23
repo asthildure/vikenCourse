@@ -1,1 +1,1 @@
-# vikenCourse
+# vikenCourse - BLOG
