@@ -1,93 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamental Blog - Contact</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamental blog - Contact</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      defer
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="js/main.js" defer></script>
     <script src="js/contact.js" defer></script>
-    </head>
-<body>
+  </head>
 
+  <body>
     <nav class="navbar bg-dark navbar-expand-lg navbar-dark mb-4">
-        <div class="container-fluid">
-            <a href="#blog" class="navbar-brand">Fundamental Blog</a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link active">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a href="#blog" class="navbar-brand">Fundamental Blog</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+
     <div class="container">
-        <section class="rounded-3 shadow">
-            <div class="card-body">
-                <header class="mb-4">
-                    <h2 class="card-title">Send us a message</h2>
-                    <h6 class="card-subtitle">Fill in the form</h6>
+      <header class="mb-4 rounded overflow-hidden">
+        <img
+          class="d-block w-100"
+          src="img/pexels-solen-feyissa-5744250.png"
+          alt="Email on iPhone"
+        />
+      </header>
 
-                </header>
-                <form action="" id="contact-form">
-                    <p>Do you have any questions or suggestions? Please fill in the form below.</p>
-                    <fieldset class="mb-2">
-                        <label for="name" class="form-label">Name *</label>
-                        <section class="input-group">
-                            <span class="input-group-text">
-                                <i class="material-icons">person</i>
-                            </span>
-                            <input type="text" placeholder="John Doe" id="name" name="name" class="form-control">
-                        </section>
-                    </fieldset>
+      <section class="rounded-3 shadow">
+        <div class="card-body">
+          <header class="mb-4">
+            <h2 class="card-title">Send us a message</h2>
+            <h6 class="card-subtitle">Fill in the form</h6>
+          </header>
 
-                    <fieldset class="mb-2">
-                        <label for="email" class="form-label">Email *</label>
-                        <section class="input-group">
-                            <span class="input-group-text">
-                                <i class="material-icons">mail</i>
-                            </span>
-                            <input type="email" placeholder="john.doe@email.com" id="email" name="email" class="form-control">
-                        </section>
-                        
-                    </fieldset>
+          <form action="" id="contact-form">
+            <p>
+              Do you have any questions or suggestions? Please fill in the form
+              below.
+            </p>
+            <fieldset class="mb-2">
+              <label for="name" class="form-label">Name *</label>
+              <section class="input-group">
+                <span class="input-group-text">
+                  <i class="material-icons">person</i>
+                </span>
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                />
+              </section>
+            </fieldset>
 
-                    <fieldset class="mb-2">
-                        <label for="message" class="form-label">Message *</label>
-                        <textarea name="message" id="message"
-                            class="form-control"
-                            rows="10"
-                            placeholder="Enter your message here..."></textarea>
-                    </fieldset>
+            <fieldset class="mb-2">
+              <label for="email" class="form-label">Email *</label>
+              <section class="input-group">
+                <span class="input-group-text">
+                  <i class="material-icons">mail</i>
+                </span>
+                <input
+                  type="email"
+                  placeholder="john.doe@email.com"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+              </section>
+            </fieldset>
 
-                    <button class="btn btn-primary d-flex align-items-center">
-                        <span class="material-icons">send</span>&nbsp;
-                        <b>SEND</b>
-                    </button>
-                    
-                </form>
-                <br>
-                    <div id="form-result"></div>
+            <fieldset class="mb-2">
+              <label for="message" class="form-label">Message *</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                rows="10"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </fieldset>
 
-            </div>
+            <button class="btn btn-primary d-flex align-items-center">
+              <span class="material-icons">send</span>&nbsp;
+              <b>SEND</b>
+            </button>
+          </form>
+          <br />
+          <div id="form-result"></div>
+        </div>
+      </section>
+    </div>
 
-
-        </section>
-
-    
-    
-</div>
-</body>
+    <footer class="bg-dark p-5 mt-4 text-light">
+      <div class="container">
+        <h4>Welcome to the Fundamental Blog</h4>
+        <p>A blog written to learn HTML, CSS and JavaScript</p>
+      </div>
+    </footer>
+  </body>
 </html>
